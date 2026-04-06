@@ -1,0 +1,112 @@
+╔══════════════════════════════════════════════════╗
+║         🏨  GRAND PALACE HOTEL  🏨               ║
+║           Hotel Reservation System               ║
+╚══════════════════════════════════════════════════╝
+  Welcome to Grand Palace Hotel, Chennai
+  2026-04-06  |  10:30
+
+
+┌─────────────────────────────────────────┐
+│              MAIN MENU                  │
+└─────────────────────────────────────────┘
+Enter choice : 1
+
+════════════════════════════════════════
+   REGISTER NEW GUEST
+════════════════════════════════════════
+Name    : Hema
+Phone   : 9876543210
+Email   : hema@gmail.com
+Address : Chennai
+
+✔ Guest registered successfully!
+Your Guest ID : G1001
+
+
+Enter choice : 2
+
+════════════════════════════════════════
+   ALL ROOMS
+════════════════════════════════════════
+Room 101 | STANDARD | AVAILABLE | Rs.2500 | 2 persons
+Room 102 | STANDARD | AVAILABLE | Rs.2500 | 2 persons
+Room 201 | DELUXE   | AVAILABLE | Rs.5000 | 3 persons
+Room 301 | SUITE    | AVAILABLE | Rs.10000| 4 persons
+
+
+Enter choice : 4
+
+════════════════════════════════════════
+   BOOK A ROOM
+════════════════════════════════════════
+Guest ID  : G1001
+Room No   : 101
+Check-In  : 10-04-2026
+Check-Out : 12-04-2026
+No. Guests: 2
+Special Req : None
+
+╔══════════════════════════════════════════╗
+║         BOOKING CONFIRMATION             ║
+╠══════════════════════════════════════════╣
+║ Booking ID    : BK5001                   ║
+║ Guest ID      : G1001                    ║
+║ Room Number   : 101                      ║
+║ Check-In      : 2026-04-10               ║
+║ Check-Out     : 2026-04-12               ║
+║ Nights        : 2                        ║
+║ Guests        : 2                        ║
+║ Status        : CONFIRMED                ║
+╠══════════════════════════════════════════╣
+║ Total Amount  : Rs. 5000.00              ║
+║ Advance Paid  : Rs. 1000.00              ║
+║ Balance Due   : Rs. 4000.00              ║
+╚══════════════════════════════════════════╝
+
+✔ Booking confirmed!
+
+
+Enter choice : 5
+
+════════════════════════════════════════
+   CHECK-IN
+════════════════════════════════════════
+Booking ID : BK5001
+
+✔ Check-In successful!
+Welcome to Grand Palace Hotel!
+
+
+Enter choice : 6
+
+════════════════════════════════════════
+   CHECK-OUT
+════════════════════════════════════════
+Booking ID : BK5001
+
+╔══════════════════════════════════════════════════╗
+║            GRAND PALACE HOTEL                   ║
+║         TAX INVOICE / BILL OF CHARGES           ║
+╠══════════════════════════════════════════════════╣
+║ Booking ID   : BK5001                           ║
+║ Guest        : Hema                             ║
+║ Room         : 101 (STANDARD)                   ║
+║ Check-In     : 2026-04-10                       ║
+║ Check-Out    : 2026-04-12                       ║
+║ Nights       : 2                                ║
+╠══════════════════════════════════════════════════╣
+║ Room Charges : Rs. 5000.00                      ║
+║ GST (18%)    : Rs. 900.00                       ║
+║──────────────────────────────────────────────────║
+║ GRAND TOTAL  : Rs. 5900.00                      ║
+║ Advance Paid : Rs. 1000.00                      ║
+║ BALANCE DUE  : Rs. 4900.00                      ║
+╚══════════════════════════════════════════════════╝
+
+Thank you for staying at Grand Palace Hotel!
+
+
+Enter choice : 0
+
+Thank you for using Grand Palace Hotel System!
+Goodbye!

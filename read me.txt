@@ -1,0 +1,132 @@
+# 🏨 Hotel Reservation System (Java)
+
+## 📌 Project Overview
+
+The **Hotel Reservation System** is a console-based Java application designed to manage hotel operations such as guest registration, room booking, check-in, check-out, and billing.
+This system provides an efficient way to handle hotel management tasks using Object-Oriented Programming (OOP) concepts.
+
+---
+
+## 🎯 Features
+
+* ✅ Register new guests
+* ✅ View all rooms with details (type, price, capacity, status)
+* ✅ Search available rooms based on date and type
+* ✅ Book rooms with guest details
+* ✅ Check-in and Check-out functionality
+* ✅ Generate invoice with GST calculation
+* ✅ Cancel bookings with refund
+* ✅ View guest details and booking history
+* ✅ View all bookings
+* ✅ View room details
+* ✅ Hotel statistics (rooms, revenue, bookings)
+* ✅ Search guest by name or phone
+
+---
+
+## 🛠️ Technologies Used
+
+* **Programming Language:** Java
+* **Concepts Used:**
+
+  * Object-Oriented Programming (OOP)
+  * Inheritance
+  * Abstraction
+  * Encapsulation
+  * Polymorphism
+* **Libraries Used:**
+
+  * `java.util`
+  * `java.time`
+
+---
+
+## 🏗️ System Design
+
+### 🔹 Main Classes
+
+* **Person (Abstract Class)** – Base class for Guest
+* **Guest** – Stores guest details
+* **Room** – Stores room information
+* **Booking** – Handles booking details
+* **Invoice** – Generates billing information
+* **Hotel** – Core class managing all operations
+* **Main** – Entry point of the program
+
+---
+
+## 🔄 Workflow
+
+1. User selects an option from the menu
+2. System performs operation (register, book, etc.)
+3. Data is stored using collections (Map, List)
+4. Output is displayed in formatted style
+
+---
+
+## ▶️ How to Run the Project
+
+1. Install Java (JDK 8 or above)
+2. Copy the code into a file named `Main.java`
+3. Compile the program:
+
+   ```
+   javac Main.java
+   ```
+4. Run the program:
+
+   ```
+   java Main
+   ```
+5. Follow the menu options displayed in the console
+
+---
+
+## 📊 Sample Functionalities
+
+### ✔ Guest Registration
+
+Stores guest details and generates unique Guest ID
+
+### ✔ Room Booking
+
+Calculates total amount based on number of nights
+
+### ✔ Billing System
+
+* 20% advance payment
+* 18% GST added during checkout
+* Final invoice generated
+
+---
+
+## 💡 Key Highlights
+
+* Menu-driven program
+* Real-time date handling using `LocalDate`
+* Unique ID generation for Guests & Bookings
+* Clean and structured output formatting
+
+---
+
+## 🚀 Future Enhancements
+
+* GUI version using JavaFX / Swing
+* Database integration (MySQL)
+* Online payment integration
+* Admin login system
+* Room service management
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates how Java can be used to build a real-world application using OOP principles. It improves understanding of class design, data handling, and system workflow.
+
+---
+
+## 👩‍💻 Author
+
+* Name: Hema
+
+---
