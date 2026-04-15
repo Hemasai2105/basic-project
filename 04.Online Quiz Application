@@ -1,0 +1,109 @@
+" Online Quiz Application 
+Create a quiz system where: 
+• Questions are stored with options and answers  
+• User attempts quiz  
+• Score is calculated at the end  
+Features: 
+• Multiple-choice questions  
+• Timer (optional)  
+• Display correct answers after completion "
+
+
+
+
+import java.util.*;
+public class OnlineQuiz {
+    static class Question {
+        String question;
+        String[] options;
+        int correctIndex;
+        Question(String question, String[] options, int correctIndex) {
+            this.question = question;
+            this.options = options;
+            this.correctIndex = correctIndex;
+        }
+    }
+    static List<Question> questions = new ArrayList<>();
+    static Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        loadQuestions();
+        System.out.println("===== Online Quiz Application =====");
+        System.out.print("Enter your name: ");
+        String name = sc.nextLine().trim();
+        System.out.println("\nHello " + name + "! The quiz has " + questions.size() + " questions.");
+        System.out.println("Each correct answer = 1 mark. No negative marking.");
+        System.out.println("Press Enter to start...");
+        sc.nextLine();
+        int score = 0;
+        int[] userAnswers = new int[questions.size()];
+        for (int i = 0; i < questions.size(); i++) {
+            Question q = questions.get(i);
+            System.out.println("\nQ" + (i + 1) + ": " + q.question);
+            for (int j = 0; j < q.options.length; j++) {
+                System.out.println("  " + (j + 1) + ". " + q.options[j]);
+            }
+            System.out.print("Your answer (1-" + q.options.length + "): ");
+            int ans = getIntInRange(1, q.options.length) - 1;
+            userAnswers[i] = ans;
+            if (ans == q.correctIndex) {
+                System.out.println("Correct!");
+                score++;
+            } else {
+                System.out.println("Wrong! Correct: " + q.options[q.correctIndex]);
+            }
+        }
+        System.out.println("\n========== Quiz Results ==========");
+        System.out.println("Name   : " + name);
+        System.out.println("Score  : " + score + " / " + questions.size());
+        System.out.printf("Percent: %.1f%%%n", (score * 100.0) / questions.size());
+        System.out.println("Grade  : " + getGrade(score, questions.size()));
+
+        System.out.println("\n--- Answer Review ---");
+        for (int i = 0; i < questions.size(); i++) {
+            Question q = questions.get(i);
+            String status = userAnswers[i] == q.correctIndex ? "[CORRECT]" : "[WRONG]";
+            System.out.println("Q" + (i + 1) + " " + status + " Correct answer: " + q.options[q.correctIndex]);
+        }
+    }
+    static String getGrade(int score, int total) {
+        double pct = (score * 100.0) / total;
+        if (pct >= 90) return "A+";
+        else if (pct >= 75) return "A";
+        else if (pct >= 60) return "B";
+        else if (pct >= 40) return "C";
+        else return "F - Better luck next time!";
+    }
+    static void loadQuestions() {
+        questions.add(new Question("What is the size of int in Java?",
+            new String[]{"2 bytes", "4 bytes", "8 bytes", "Depends on OS"}, 1));
+        questions.add(new Question("Which keyword is used to inherit a class in Java?",
+            new String[]{"implements", "extends", "inherits", "super"}, 1));
+        questions.add(new Question("What does JVM stand for?",
+            new String[]{"Java Virtual Machine", "Java Variable Method", "Java Verified Module", "Java Version Manager"}, 0));
+        questions.add(new Question("Which of these is NOT a primitive type in Java?",
+            new String[]{"int", "boolean", "String", "char"}, 2));
+        questions.add(new Question("What is the default value of a boolean in Java?",
+            new String[]{"true", "false", "null", "0"}, 1));
+        questions.add(new Question("Which loop is guaranteed to execute at least once?",
+            new String[]{"for", "while", "do-while", "foreach"}, 2));
+        questions.add(new Question("What is the parent class of all classes in Java?",
+            new String[]{"Class", "Super", "Object", "Base"}, 2));
+        questions.add(new Question("Which collection does NOT allow duplicates?",
+            new String[]{"ArrayList", "LinkedList", "HashSet", "Stack"}, 2));
+        questions.add(new Question("Which access modifier makes a member visible everywhere?",
+            new String[]{"private", "protected", "default", "public"}, 3));
+        questions.add(new Question("What does 'static' mean in Java?",
+            new String[]{"Belongs to an object", "Cannot be changed", "Belongs to the class", "Runs first"}, 2));
+    }
+    static int getIntInRange(int min, int max) {
+        while (true) {
+            try {
+                int val = Integer.parseInt(sc.nextLine().trim());
+                if (val >= min && val <= max) return val;
+                System.out.print("Enter between " + min + " and " + max + ": ");
+            } catch (Exception e) {
+                System.out.print("Invalid input. Try again: ");
+            }
+        }
+    }
+}
