@@ -1,14 +1,14 @@
-". Student Management System 
-Design a console-based application to manage student records. 
-The system should allow users to: 
-• Add a new student (ID, name, marks in multiple subjects)  
-• Display all students  
-• Search student by ID  
-• Calculate average marks and grade  
-• Update and delete student records  
-Constraints: 
-• Use arrays or collections  
-• Handle invalid inputs gracefully"
+// ". Student Management System 
+// Design a console-based application to manage student records. 
+// The system should allow users to: 
+// • Add a new student (ID, name, marks in multiple subjects)  
+// • Display all students  
+// • Search student by ID  
+// • Calculate average marks and grade  
+// • Update and delete student records  
+// Constraints: 
+// • Use arrays or collections  
+// • Handle invalid inputs gracefully"
 import java.util.*;
 public class StudentManagement {
     static class Student {
