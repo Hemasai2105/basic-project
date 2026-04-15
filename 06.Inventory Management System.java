@@ -1,12 +1,12 @@
-" Inventory Management System 
-Build a system to manage store inventory: 
-• Add products (ID, Name, Quantity, Price)  
-• Update stock  
-• Remove product  
-• Display inventory  
-Features: 
-• Alert when stock is low  
-• Calculate total inventory value " 
+// " Inventory Management System 
+// Build a system to manage store inventory: 
+// • Add products (ID, Name, Quantity, Price)  
+// • Update stock  
+// • Remove product  
+// • Display inventory  
+// Features: 
+// • Alert when stock is low  
+// • Calculate total inventory value " 
 import java.util.*;
 public class InventoryManagement {
     static final int LOW_STOCK_THRESHOLD = 5;
