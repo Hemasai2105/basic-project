@@ -1,13 +1,13 @@
-"  Bank Account Simulation 
-Create a banking system where users can: 
-• Create an account (Account Number, Name, Balance)  
-• Deposit money  
-• Withdraw money (with balance validation)  
-• View account details  
-• Transfer money between accounts  
-Rules: 
-• Prevent overdraft  
-• Maintain transaction history (optional enhancement)  "
+// "  Bank Account Simulation 
+// Create a banking system where users can: 
+// • Create an account (Account Number, Name, Balance)  
+// • Deposit money  
+// • Withdraw money (with balance validation)  
+// • View account details  
+// • Transfer money between accounts  
+// Rules: 
+// • Prevent overdraft  
+// • Maintain transaction history (optional enhancement)  "
 
 import java.util.*;
 public class BankAccount {
