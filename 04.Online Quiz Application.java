@@ -1,12 +1,12 @@
-" Online Quiz Application 
-Create a quiz system where: 
-• Questions are stored with options and answers  
-• User attempts quiz  
-• Score is calculated at the end  
-Features: 
-• Multiple-choice questions  
-• Timer (optional)  
-• Display correct answers after completion "
+// " Online Quiz Application 
+// Create a quiz system where: 
+// • Questions are stored with options and answers  
+// • User attempts quiz  
+// • Score is calculated at the end  
+// Features: 
+// • Multiple-choice questions  
+// • Timer (optional)  
+// • Display correct answers after completion "
 
 
 
