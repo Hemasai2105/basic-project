@@ -1,12 +1,12 @@
 
-"Hotel Room Booking System 
-Develop a booking system where: 
-• Rooms can be booked and canceled  
-• Show available rooms  
-• Store customer details  
-Constraints: 
-• Avoid double booking  
-• Room categories (AC, Non-AC) "
+// "Hotel Room Booking System 
+// Develop a booking system where: 
+// • Rooms can be booked and canceled  
+// • Show available rooms  
+// • Store customer details  
+// Constraints: 
+// • Avoid double booking  
+// • Room categories (AC, Non-AC) "
 import java.util.*;
 public class HotelBooking {
     enum RoomType { AC, NON_AC }
