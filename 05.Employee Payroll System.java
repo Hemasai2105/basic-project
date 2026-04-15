@@ -1,12 +1,12 @@
-"Employee Payroll System 
-Design a payroll system that: 
-• Stores employee details (ID, Name, Salary)  
-• Calculates gross salary (including allowances)  
-• Deducts tax based on salary slabs  
-• Generates salary slip  
-Constraints: 
-• Use OOP concepts  
-• Different employee types (Manager, Developer) "
+// "Employee Payroll System 
+// Design a payroll system that: 
+// • Stores employee details (ID, Name, Salary)  
+// • Calculates gross salary (including allowances)  
+// • Deducts tax based on salary slabs  
+// • Generates salary slip  
+// Constraints: 
+// • Use OOP concepts  
+// • Different employee types (Manager, Developer) "
 import java.util.*;
 public class EmployeePayroll {
     abstract static class Employee {
